@@ -6,6 +6,227 @@ html {
 /* === header === */
 
 header {
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+header li.font-yellow {
+  color: rgb(250, 158, 9);
+}
+
+header li.button-yellow {
+  background-color: rgb(250, 158, 9);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: ce;
+}
+.banner {
+  background: url(../images/background-banner.png) no-repeat;
+  background-size: auto 100%;
+  padding: 2vw 5vw 2vw 5vw;
+  margin: 5vw 0vw 5vw 0vw;
+}
+.banner p.button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.banner p.button img {
+  width: 30%;
+  height: 70%;
+}
+.banner h1 {
+  font-size: 2rem;
+}
+.banner p {
+  font-size: 0.75rem;
+}
+.banner a {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  align-items: center;
+}
+
+.ready div.imagem {
+  display: none;
+}
+.ready {
+  text-align: center;
+  margin: 3vw 5vw 3vw 5vw;
+}
+.ready h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+.ready .lista ul li h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.ready div.lista ul li p {
+  color: rgb(70, 69, 69);
+}
+.dow {
+  background-color: rgb(255, 196, 0);
+  border-radius: 20px;
+  margin: 3vw 5vw 3vw 5vw;
+  color: white;
+  padding: 10px;
+}
+.dow h2{
+    font-size: 1.5rem;
+}
+
+.dow .btn{
+    background-color: black;
+    padding: 1vw 3vw;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.services{
+    padding: 3vw 5vw;
+}
+.services h2{
+    font-size: 1.1rem;
+}
+.services div.txt{
+    margin: 0 0 20px 0;
+}
+.services ul li{
+    background-color: rgb(187, 187, 187);
+    padding: 20px;
+    margin: 10px 0 10px 0;
+
+
+}
+.services ul li h3{
+    font-size: 1.3rem;
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header ul {
+    display: flex;
+    gap: 1rem;
+  }
+  header ul {
+    text-align: center;
+    padding: 0rem;
+    font-size: 0.6rem;
+    align-items: center;
+  }
+  .banner {
+    background: url(../images/background-banner.png) no-repeat;
+    background-size: auto 150%;
+    padding: 2vw 5vw 2vw 5vw;
+    margin: 1vw 0vw 5vw 0vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .banner h1 {
+    font-size: 1rem;
+  }
+  .banner p {
+    font-size: 0.8rem;
+  }
+  .banner a.button {
+    display: flex;
+    gap: 0.1rem;
+    justify-content: center;
+  }
+  .banner p.button img {
+    width: 30%;
+    height: 60%;
+  }
+  .ready div.imagem {
+    display: block;
+  }
+  .ready > p {
+    padding: 0 30% 0 30%;
+  }
+  .ready > div {
+    display: flex;
+    justify-content: center;
+  }
+  .ready .lista ul li h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .ready .lista ul li p {
+    font-size: 0.7rem;
+  }
+
+  .ready div.lista ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 40vw;
+  }
+  .ready div.lista ul li {
+    width: 40%;
+  }
+  .dow {
+    padding: 3vw;
+    background:
+      url(../images/iphone-pet-ui.png) no-repeat,
+      url(../images/iphone-pet-ui.png) no-repeat;
+    background-size:
+      auto 140%,
+      auto 95%;
+    background-position:
+      center -100%, 90% -15vw;
+      background-color: rgb(255, 196, 0);
+  }
+  .dow p {
+    width: 20%;
+    margin: 0 0 5vw 0;
+  }
+    .services{
+        display:flex ;
+        gap: 20px;
+
+    }
+    .services ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .services p{
+        font-size: 0.7rem;
+    }
+
+}
+/* USO DIRETO */
+html {
+  font-size: clamp(1rem, calc(0.5rem + 2vw), 4rem);
+}
+
+/* === header === */
+
+header {
     text-align: center;
     padding: 1rem 1rem;
     font-size: 0.9rem;
